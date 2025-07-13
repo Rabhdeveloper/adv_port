@@ -318,7 +318,7 @@ nav ul li {
 }
 
 .timeline-item {
-    padding: 10px 40px;
+    padding: 50px 40px;
     position: relative;
     width: 50%;
     box-sizing: border-box;
@@ -381,10 +381,12 @@ nav ul li {
 }
 
 .tech-icon {
-    width: 60px;
-    height: 60px;
+    width: 100%; /* Makes the image responsive to its container */
+    max-width: 300px; /* Sets a maximum width */
+    height: auto; /* Maintains aspect ratio */
     object-fit: contain;
     margin-bottom: 15px;
+    border-radius: var(--border-radius); /* Optional: adds rounded corners */
 }
 
 .timeline-skills {

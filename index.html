@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saurabh's Portfolio - Fullstack Developer">
-    <meta name="keywords" content="portfolio, web developer, fullstack, HTML, CSS, JavaScript">
+    <meta name="description"
+        content="Saurabh - Full Stack Developer | BCA Graduate from Jagannath University. Expert in HTML, CSS, JavaScript, PHP, Python, MySQL, and REST APIs. Building scalable, API-driven web applications.">
+    <meta name="keywords"
+        content="Saurabh, Full Stack Developer, Web Developer, BCA, Portfolio, HTML, CSS, JavaScript, Python, Java, React, PHP, MySQL, REST API">
     <meta name="author" content="Saurabh">
-    <title>Saurabh's Portfolio | Fullstack Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saurabh | Full Stack Developer">
+    <meta property="og:description"
+        content="BCA graduate and Full Stack Developer with strong experience building scalable, API-driven web applications.">
+    <meta property="og:type" content="website">
+
+    <title>Saurabh | Full Stack Developer & BCA Graduate</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <header>
         <nav>
-            <div class="left">Saurabh's Portfolio</div>
+            <div class="left">Saurabh</div>
             <div class="right">
                 <ul id="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="hamburger" id="hamburger" aria-label="Menu">
+                <div class="hamburger" id="hamburger" aria-label="Toggle Menu">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -38,23 +63,44 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section" id="home">
+            <!-- Floating Background Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
             <div class="hero-content fade-in">
                 <h1>Hi, I'm <span class="highlight">Saurabh</span></h1>
                 <div class="typing-text">
                     <span id="typed-text"></span>
                 </div>
-                <p class="hero-description">I build exceptional digital experiences with modern web technologies.</p>
+                <p class="hero-description">
+                    BCA graduate and Full Stack Developer with strong experience building scalable,
+                    API-driven web applications using HTML, CSS, JavaScript, PHP, Python, and MySQL.
+                    Passionate about clean code and end-to-end feature development.
+                </p>
                 <div class="button-group">
                     <a href="assets/Saurabh_CV.pdf" download class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download CV
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
-                    <a href="https://github.com/rabhdeveloper" target="_self" rel="noopener noreferrer" class="btn btn-outline">
-                        <i class="fab fa-github"></i> Visit GitHub
+                    <a href="https://github.com/rabhdeveloper" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline">
+                        <i class="fab fa-github"></i> View GitHub
+                    </a>
+                </div>
+                <!-- Quick Contact Links -->
+                <div class="hero-links">
+                    <a href="https://github.com/rabhdeveloper" target="_blank" class="hero-link">
+                        <i class="fab fa-github"></i> github.com/rabhdeveloper
+                    </a>
+                    <a href="https://linkedin.com/in/rabhdeveloper" target="_blank" class="hero-link">
+                        <i class="fab fa-linkedin"></i> linkedin.com/in/rabhdeveloper
                     </a>
                 </div>
             </div>
-            <div class="hero-image fade-in delay-1">
-                <img src="/images/pro.jpeg" alt="Saurabh - Fullstack Developer" loading="lazy">
+            <div class="hero-image fade-in delay-2">
+                <img src="images/pro.jpeg" alt="Saurabh - Full Stack Developer" loading="eager">
             </div>
         </section>
 
@@ -64,115 +110,129 @@
         <section class="about-section" id="about">
             <p class="section-subtitle fade-in">Get to know me</p>
             <h2 class="section-title fade-in delay-1">About Me</h2>
-            
+
             <div class="about-container">
-                <div class="about-image fade-in">
-                    <img src="/images/pro.jpeg" alt="Saurabh Profile Picture" loading="lazy">
+                <div class="about-image fade-in-left">
+                    <img src="images/pro.jpeg" alt="Saurabh - Profile Picture" loading="lazy">
                 </div>
-                <div class="about-content fade-in delay-1">
-                    <h3>Who am I?</h3>
-                    <p>I'm a passionate Fullstack Developer with expertise in building modern web applications. With 3+ years of experience, I specialize in JavaScript technologies across the whole stack.</p>
-                    
+                <div class="about-content fade-in-right">
+                    <h3>Professional Summary</h3>
+                    <p>
+                        BCA graduate and Full Stack Developer with strong experience building scalable,
+                        API-driven web applications using HTML, CSS, JavaScript, PHP, Python, and MySQL.
+                        Demonstrated ability to design end-to-end features, integrate third-party services,
+                        and write clean, maintainable code using Git-based workflows.
+                    </p>
+                    <p>
+                        Strong foundation in data structures, operating systems, and object-oriented programming.
+                        Passionate about creating impactful digital solutions and continuously learning new
+                        technologies.
+                    </p>
+
                     <div class="about-details">
                         <div class="detail-item">
-                            <h4>Name:</h4>
+                            <h4>Name</h4>
                             <p>Saurabh</p>
                         </div>
                         <div class="detail-item">
-                            <h4>Email:</h4>
+                            <h4>Email</h4>
                             <p>saurabhsk4u@gmail.com</p>
                         </div>
                         <div class="detail-item">
-                            <h4>Experience:</h4>
-                            <p>Learning/Fresher</p>
+                            <h4>Status</h4>
+                            <p>BCA Graduate | Full Stack Developer</p>
                         </div>
                         <div class="detail-item">
-                            <h4>Location:</h4>
-                            <p>New Delhi, India</p>
+                            <h4>Location</h4>
+                            <p>Rohini, New Delhi, India</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Work Experience -->
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+            <p class="section-subtitle fade-in">My Academic Journey</p>
+            <h2 class="section-title fade-in delay-1">Education</h2>
+
+            <div class="education-container">
+                <div class="education-card fade-in delay-2">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Jagannath University</h3>
+                        <p class="degree">Bachelor of Computer Applications (BCA)</p>
+                        <p class="date">
+                            <i class="fas fa-calendar-alt"></i>
+                            2022 – 2025 | Delhi, India
+                        </p>
+                        <p><strong>CGPA:</strong> 7.0</p>
+
+                        <div class="coursework">
+                            <span>Data Structures & Algorithms</span>
+                            <span>Operating Systems</span>
+                            <span>Network Security</span>
+                            <span>DBMS</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Object-Oriented Programming</span>
+                            <span>Web Development</span>
+                            <span>React Framework</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
         <section class="experience-section" id="experience">
-            <p class="section-subtitle fade-in">What I've accomplished so far</p>
+            <p class="section-subtitle fade-in">Professional Experience</p>
             <h2 class="section-title fade-in delay-1">Work Experience</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item left-item fade-in">
-                    <div class="timeline-content">
-                        <img src="/images/1.jpeg" alt="HTML" class="tech-icon" loading="lazy">
-                        <div class="timeline-date">2020 - Present</div>
-                        <h3 class="timeline-title">HTML/CSS Developer</h3>
-                        <p class="timeline-desc">Creating responsive and accessible web interfaces with modern HTML5 and CSS3 techniques.</p>
-                        <ul class="timeline-skills">
-                            <li>Semantic HTML5</li>
-                            <li>CSS3 Animations</li>
-                            <li>Responsive Design</li>
-                            <li>Accessibility</li>
+
+            <div class="experience-container">
+                <div class="experience-card fade-in delay-2">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Full Stack Developer Intern</h3>
+                            <p class="company">Tech Explica</p>
+                        </div>
+                        <div class="experience-meta">
+                            <span class="date">July 2024 – September 2024</span>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-responsibilities">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Designed and developed a responsive corporate website for RS Engineering using HTML,
+                                CSS, and JavaScript.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented dynamic contact forms to capture and route client inquiries efficiently.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Optimized front-end performance and ensured cross-browser compatibility.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Collaborated using Git-based workflows and followed structured development practices.
+                            </li>
                         </ul>
                     </div>
-                </div>
-                
-                <div class="timeline-item right-item fade-in delay-1">
-                    <div class="timeline-content">
-                        <img src="/images/2.png" alt="JavaScript" class="tech-icon" loading="lazy">
-                        <div class="timeline-date">2021 - Present</div>
-                        <h3 class="timeline-title">JavaScript Developer</h3>
-                        <p class="timeline-desc">Building interactive web applications using vanilla JavaScript and modern frameworks.</p>
-                        <ul class="timeline-skills">
-                            <li>ES6+</li>
-                            <li>React.js</li>
-                            <li>Vue.js</li>
-                            <li>TypeScript</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left-item fade-in delay-2">
-                    <div class="timeline-content">
-                        <img src="/images/3.jpeg" alt="Node.js" class="tech-icon" loading="lazy">
-                        <div class="timeline-date">2022 - Present</div>
-                        <h3 class="timeline-title">Node.js Developer</h3>
-                        <p class="timeline-desc">Developing scalable backend services and APIs with Node.js and Express.</p>
-                        <ul class="timeline-skills">
-                            <li>REST APIs</li>
-                            <li>Express.js</li>
-                            <li>MongoDB</li>
-                            <li>Authentication</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right-item fade-in delay-3">
-                    <div class="timeline-content">
-                        <img src="/images/5.jpeg" alt="Python" class="tech-icon" loading="lazy">
-                        <div class="timeline-date">2023 - Present</div>
-                        <h3 class="timeline-title">Python Developer</h3>
-                        <p class="timeline-desc">Creating data processing scripts and backend services with Python.</p>
-                        <ul class="timeline-skills">
-                            <li>Django</li>
-                            <li>Flask</li>
-                            <li>Data Analysis</li>
-                            <li>Automation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left-item fade-in delay-4">
-                    <div class="timeline-content">
-                        <img src="/images/4.jpeg" alt="C++" class="tech-icon" loading="lazy">
-                        <div class="timeline-date">2019 - Present</div>
-                        <h3 class="timeline-title">C++ Developer</h3>
-                        <p class="timeline-desc">Building high-performance applications and solving complex problems with C++.</p>
-                        <ul class="timeline-skills">
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                            <li>System Design</li>
-                            <li>Optimization</li>
-                        </ul>
+
+                    <div class="experience-highlights">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Git</span>
+                        <span>Responsive Design</span>
+                        <span>Cross-browser Compatibility</span>
                     </div>
                 </div>
             </div>
@@ -180,179 +240,339 @@
 
         <!-- Projects Section -->
         <section class="projects-section" id="projects">
-            <p class="section-subtitle fade-in">My recent work</p>
+            <p class="section-subtitle fade-in">My Recent Work</p>
             <h2 class="section-title fade-in delay-1">Featured Projects</h2>
-            
+
             <div class="projects-container">
+                <!-- Weather App -->
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="/images/7.png" alt="E-commerce Platform" loading="lazy">
+                        <img src="images/8.jpeg" alt="Weather Temperature Indicator" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>A full-featured online store with product management, cart, and payment integration.</p>
+                        <p class="project-date"><i class="fas fa-calendar"></i> Jan 2025 – Jun 2025</p>
+                        <h3>Weather Temperature Indicator</h3>
+                        <p>
+                            Built a responsive weather application consuming third-party REST APIs to deliver
+                            real-time temperature, forecasts, and alerts. Designed modular JavaScript logic to
+                            handle API responses, error states, and UI updates. Improved page responsiveness
+                            through optimized DOM manipulation.
+                        </p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://weather-app-eight-self-14.vercel.app/" target="_blank"
+                                class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/rabhdeveloper" target="_blank"
+                                class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- NGO Crowdfunding -->
                 <div class="project-card fade-in delay-1">
                     <div class="project-image">
-                        <img src="/images/6.jpg" alt="Task Management App" loading="lazy">
+                        <img src="images/6.jpg" alt="NGO Crowdfunding Platform" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A productivity application for organizing tasks with drag-and-drop functionality.</p>
+                        <p class="project-date"><i class="fas fa-calendar"></i> Mar 2025 – May 2025</p>
+                        <h3>NGO Crowdfunding Platform</h3>
+                        <p>
+                            Developed a full-stack crowdfunding platform supporting secure donations and campaign
+                            management. Implemented Razorpay payment integration with server-side verification
+                            and automated PDF receipt generation. Designed relational database schema and CRUD
+                            operations for users, campaigns, and transactions.
+                        </p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>Tailwind CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                            <span>Razorpay</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/rabhdeveloper" target="_blank"
+                                class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Portfolio Website -->
                 <div class="project-card fade-in delay-2">
                     <div class="project-image">
-                        <img src="/images/8.jpeg" alt="Weather Dashboard" loading="lazy">
+                        <img src="images/7.png" alt="Advanced Portfolio Website" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather information with forecast and location-based services.</p>
+                        <p class="project-date"><i class="fas fa-calendar"></i> May 2024 – Jul 2024</p>
+                        <h3>Advanced Portfolio Website</h3>
+                        <p>
+                            Designed and developed a fully responsive personal portfolio to showcase projects
+                            and technical skills. Implemented reusable UI components and followed clean code
+                            practices for maintainability. Deployed and version-controlled using GitHub.
+                        </p>
                         <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>API Integration</span>
-                            <span>Chart.js</span>
+                            <span>Bootstrap</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://weather-app-eight-self-14.vercel.app/" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+                            <a href="#home" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Site
+                            </a>
+                            <a href="https://github.com/rabhdeveloper" target="_blank"
+                                class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="more-projects fade-in delay-3">
-                <a href="#" class="btn btn-outline">
-                    <i class="fas fa-folder-open"></i> View All Projects
-                </a>
+
+                <!-- Snake Game -->
+                <div class="project-card fade-in delay-3">
+                    <div class="project-image">
+                        <img src="images/5.jpeg" alt="Snake Game - Python" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <p class="project-date"><i class="fas fa-calendar"></i> 2024</p>
+                        <h3>Snake Game</h3>
+                        <p>
+                            Developed a classic Snake game using Python with real-time input handling and
+                            game-state management. Designed collision detection, score tracking, and increasing
+                            difficulty using object-oriented principles. Strengthened algorithmic thinking
+                            through efficient loop control and state updates.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OOP</span>
+                            <span>Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rabhdeveloper" target="_blank"
+                                class="btn btn-small btn-outline">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section class="skills-section" id="skills">
             <p class="section-subtitle fade-in">What I bring to the table</p>
-            <h2 class="section-title fade-in delay-1">My Skills</h2>
-            
+            <h2 class="section-title fade-in delay-1">Technical Skills</h2>
+
             <div class="skills-container">
+                <!-- Programming Languages -->
                 <div class="skill-category fade-in">
-                    <h3>Frontend</h3>
+                    <h3><i class="fas fa-code"></i> Languages</h3>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <i class="fab fa-html5 skill-icon"></i>
                             <h4 class="skill-name">HTML5</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
                         </div>
                         <div class="skill-card">
                             <i class="fab fa-css3-alt skill-icon"></i>
                             <h4 class="skill-name">CSS3</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
                         </div>
                         <div class="skill-card">
                             <i class="fab fa-js skill-icon"></i>
                             <h4 class="skill-name">JavaScript</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-react skill-icon"></i>
-                            <h4 class="skill-name">React</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category fade-in delay-1">
-                    <h3>Backend</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fab fa-node-js skill-icon"></i>
-                            <h4 class="skill-name">Node.js</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
                         </div>
                         <div class="skill-card">
                             <i class="fab fa-python skill-icon"></i>
                             <h4 class="skill-name">Python</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-database skill-icon"></i>
-                            <h4 class="skill-name">MongoDB</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                            <i class="fab fa-java skill-icon"></i>
+                            <h4 class="skill-name">Java</h4>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-database skill-icon"></i>
-                            <h4 class="skill-name">PostgreSQL</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
+                            <i class="fas fa-code skill-icon"></i>
+                            <h4 class="skill-name">C++</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-mobile-alt skill-icon"></i>
+                            <h4 class="skill-name">Dart</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-file-code skill-icon"></i>
+                            <h4 class="skill-name">XML</h4>
                         </div>
                     </div>
                 </div>
-                
-                <div class="skill-category fade-in delay-2">
-                    <h3>Tools & Others</h3>
+
+                <!-- Backend & Databases -->
+                <div class="skill-category fade-in delay-1">
+                    <h3><i class="fas fa-database"></i> Backend & Databases</h3>
                     <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-php skill-icon"></i>
+                            <h4 class="skill-name">PHP</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h4 class="skill-name">MySQL</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-leaf skill-icon"></i>
+                            <h4 class="skill-name">MongoDB</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-plug skill-icon"></i>
+                            <h4 class="skill-name">REST APIs</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-category fade-in delay-2">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon"></i>
+                            <h4 class="skill-name">React</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap skill-icon"></i>
+                            <h4 class="skill-name">Bootstrap</h4>
+                        </div>
                         <div class="skill-card">
                             <i class="fab fa-git-alt skill-icon"></i>
                             <h4 class="skill-name">Git</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
                         </div>
                         <div class="skill-card">
-                            <i class="fab fa-docker skill-icon"></i>
-                            <h4 class="skill-name">Docker</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
+                            <i class="fab fa-github skill-icon"></i>
+                            <h4 class="skill-name">GitHub</h4>
                         </div>
                         <div class="skill-card">
-                            <i class="fas fa-server skill-icon"></i>
-                            <h4 class="skill-name">AWS</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-terminal skill-icon"></i>
+                            <i class="fab fa-linux skill-icon"></i>
                             <h4 class="skill-name">Linux</h4>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-apple skill-icon"></i>
+                            <h4 class="skill-name">macOS</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developer Tools -->
+                <div class="skill-category fade-in delay-3">
+                    <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-code skill-icon"></i>
+                            <h4 class="skill-name">VS Code</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-lightbulb skill-icon"></i>
+                            <h4 class="skill-name">IntelliJ IDEA</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-moon skill-icon"></i>
+                            <h4 class="skill-name">Eclipse</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python skill-icon"></i>
+                            <h4 class="skill-name">Anaconda</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-tools skill-icon"></i>
+                            <h4 class="skill-name">MySQL Workbench</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section" id="certifications">
+            <p class="section-subtitle fade-in">Professional Development</p>
+            <h2 class="section-title fade-in delay-1">Certifications</h2>
+
+            <div class="certifications-container">
+                <div class="certifications-grid">
+                    <div class="cert-card fade-in">
+                        <div class="cert-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Edge ML and IoT</h4>
+                            <p>NPTEL</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in delay-1">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>The Joy of Computing Using Python</h4>
+                            <p>NPTEL</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in delay-2">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>O Level Certification</h4>
+                            <p>NIELIT</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in delay-3">
+                        <div class="cert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Introduction to SQL</h4>
+                            <p>Simplilearn</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in delay-4">
+                        <div class="cert-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Introduction to Responsible AI</h4>
+                            <p>Simplilearn</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in delay-5">
+                        <div class="cert-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Introduction to Generative AI Studio</h4>
+                            <p>Simplilearn</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card fade-in">
+                        <div class="cert-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h4>Python for Data Science</h4>
+                            <p>YBI Foundation</p>
                         </div>
                     </div>
                 </div>
@@ -363,12 +583,15 @@
         <section class="contact-section" id="contact">
             <p class="section-subtitle fade-in">Get in touch</p>
             <h2 class="section-title fade-in delay-1">Contact Me</h2>
-            
+
             <div class="contact-container">
                 <div class="contact-info fade-in">
-                    <h3>Let's talk about your project</h3>
-                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
-                    
+                    <h3>Let's work together</h3>
+                    <p>
+                        I'm currently looking for new opportunities. Whether you have a project in mind,
+                        a job opportunity, or just want to connect — my inbox is always open!
+                    </p>
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -388,20 +611,28 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>New Delhi, India</p>
+                                <p>Rohini, New Delhi, India</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/rabhdeveloper" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/rabhdeveloper" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <form class="contact-form fade-in delay-1">
+
+                <form class="contact-form fade-in delay-1" id="contact-form">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -426,52 +657,59 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column">
-                <h3>Saurabh's Portfolio</h3>
-                <p>Building digital experiences that matter with clean code and creative solutions.</p>
+                <h3>Saurabh</h3>
+                <p>
+                    Full Stack Developer with expertise in building scalable, API-driven web applications.
+                    Always learning, always growing.
+                </p>
                 <div class="footer-social">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/rabhdeveloper" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rabhdeveloper" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-column">
-                <h3>Services</h3>
+                <h3>Expertise</h3>
                 <ul>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">App Development</a></li>
-                    <li><a href="#">UI/UX Design</a></li>
-                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> Full Stack Development</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> REST API Integration</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> Database Management</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> React & JavaScript</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-column">
-                <h3>Newsletter</h3>
-                <p>Subscribe to my newsletter for the latest updates.</p>
-                <form class="newsletter-form">
+                <h3>Stay Connected</h3>
+                <p>Subscribe for updates on my latest projects and tech insights.</p>
+                <form class="newsletter-form" id="newsletter-form">
                     <input type="email" placeholder="Your Email" required>
-                    <button type="submit" class="btn btn-small">
+                    <button type="submit" aria-label="Subscribe">
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <div class="copyright">
-                &copy; <span id="year"></span> Saurabh's Portfolio. All rights reserved.
+                © <span id="year"></span> Saurabh. All rights reserved.
             </div>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
@@ -481,11 +719,13 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top" aria-label="Back to top">
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
